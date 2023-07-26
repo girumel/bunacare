@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@200;300;400;600&display=swap");
+
+:root {
+  --green: #6f6a37;
+  --red: #6f373c;
+  --main_color: hsl(25, 34%, 33%);
+  --white: #ffffff;
+  --font: "Yanone Kaffeesatz", sans-serif;
+}
+* {
+  background-color: var(--main_color);
+}
