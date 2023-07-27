@@ -1,9 +1,12 @@
-import Dashboard from "./components/Dash/Dashboard";
+import "./app.css";
+import Body from "./components/Bodysection/Body";
+import Sidebar from "./components/Sidebarsection/Sidebar";
 
 function App() {
   return (
-    <div className="App">
-      <Dashboard />
+    <div className="container">
+      <Sidebar />
+      <Body />
     </div>
   );
 }
