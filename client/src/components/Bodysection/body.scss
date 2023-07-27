@@ -3,9 +3,16 @@
   height: 100%;
   padding: 2rem;
   overflow: auto;
+  .title{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+  }
   .bottom {
     margin-top: 2rem;
     gap: 2rem;
     align-items: flex-start;
   }
+
 }

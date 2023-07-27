@@ -1,1 +1,104 @@
-/*# sourceMappingURL=weather.css.map */
+:root {
+  --green: #6f6a37;
+  --red: #6f373c;
+  --main_color: hsl(25, 34%, 33%);
+  --white: #ffffff;
+  --font: "Yanone Kaffeesatz", sans-serif;
+  --font-second: "Aladin", cursive;
+  --primary-color: #a68966d6;
+  --secondary-color: #62422b;
+  --add-color: #a0450e;
+  --sidebar: #6c3428;
+  --sidebar-color-header: #acb5a7;
+  --main-color: #dfa878;
+  --add-color-1: #6c3428;
+  /* font size */
+  --biggest-font: 2.5rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smalest-font-size: 0.75rem;
+}
+
+.weatherContanier {
+  border: 1px solid black;
+  height: 100%;
+  padding: 1rem;
+  border-radius: 8px;
+  background: var(--green);
+}
+.weatherContanier .cloudicon {
+  padding: 1rem;
+}
+.weatherContanier .cloudicon .cloud {
+  height: 100px;
+  width: 100px;
+}
+.weatherContanier .weatherFeed {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+.weatherContanier .weatherFeed .weatherTitle {
+  color: var(--white);
+  font-weight: 400;
+  font-size: var(--h2-font-size);
+  padding: 0.4rem 0rem;
+}
+.weatherContanier .weatherFeed .date {
+  padding: 0.4rem 0;
+  color: var(--sidebar);
+  font-size: var(--h3-font-size);
+}
+.weatherContanier .weatherFeed .date_in_number {
+  padding: 0.4rem 0;
+  color: var(--sidebar);
+  font-size: var(--normal-font-size);
+}
+.weatherContanier .temprature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.weatherContanier .temprature .feed {
+  padding: 0 0.4rem;
+}
+.weatherContanier .temprature .feed .sunicon {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.weatherContanier .temprature .feed .sunicon .sun {
+  height: 50px;
+  width: 50px;
+  color: yellow;
+}
+.weatherContanier .temprature .feed .sunicon .degree {
+  font-size: var(--normal-font-size);
+  color: var(--white);
+  padding: 0 0.5rem;
+}
+.weatherContanier .temprature .weatherInfo {
+  padding: 1rem;
+}
+.weatherContanier .temprature .weatherInfo .degree {
+  font-size: var(--normal-font-size);
+  color: var(--white);
+  padding: 0.3rem 0.5em;
+}
+.weatherContanier .temprature .btn {
+  color: var(--sidebar-color-header);
+  background: var(--white);
+  font-size: var(--normal-font-size);
+  display: flex;
+  width: 80%;
+  align-items: center;
+  justify-content: center;
+}
+.weatherContanier .temprature .btn:hover {
+  color: var(--sidebar);
+  background-color: var(--sidebar-color-header);
+}/*# sourceMappingURL=Weather.css.map */

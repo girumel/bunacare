@@ -1,0 +1,105 @@
+:root {
+  --green: #6f6a37;
+  --red: #6f373c;
+  --main_color: hsl(25, 34%, 33%);
+  --white: #ffffff;
+  --font: "Yanone Kaffeesatz", sans-serif;
+  --font-second: "Aladin", cursive;
+  --primary-color: #a68966d6;
+  --secondary-color: #62422b;
+  --add-color: #a0450e;
+  --sidebar: #6c3428;
+  --sidebar-color-header: #acb5a7;
+  --main-color: #dfa878;
+  --add-color-1: #6c3428;
+
+  /* font size */
+  --biggest-font: 2.5rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smalest-font-size: 0.75rem;
+}
+
+.weatherContanier {
+  border: 1px solid black;
+  height: 100%;
+  padding: 1rem;
+  border-radius: 8px;
+  background: var(--green);
+  .cloudicon {
+    padding: 1rem;
+    .cloud {
+      height: 100px;
+      width: 100px;
+    }
+  }
+  .weatherFeed {
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    .weatherTitle {
+      color: var(--white);
+      font-weight: 400;
+      font-size: var(--h2-font-size);
+      padding: 0.4rem 0rem;
+    }
+    .date {
+      padding: 0.4rem 0;
+      color: var(--sidebar);
+      font-size: var(--h3-font-size);
+    }
+    .date_in_number {
+      padding: 0.4rem 0;
+      color: var(--sidebar);
+      font-size: var(--normal-font-size);
+    }
+  }
+  .temprature {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .feed {
+      padding: 0 0.4rem;
+      .sunicon {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        .sun {
+          height: 50px;
+          width: 50px;
+          color: yellow;
+        }
+        .degree {
+          font-size: var(--normal-font-size);
+          color: var(--white);
+          padding: 0 0.5rem;
+        }
+      }
+    }
+    .weatherInfo {
+      padding: 1rem;
+      .degree {
+        font-size: var(--normal-font-size);
+        color: var(--white);
+        padding: 0.3rem 0.5em;
+      }
+    }
+    .btn {
+      color: var(--sidebar-color-header);
+      background: var(--white);
+      font-size: var(--normal-font-size);
+      display: flex;
+      width: 80%;
+      align-items: center;
+      justify-content: center;
+      &:hover {
+        color: var(--sidebar);
+        background-color: var(--sidebar-color-header);
+      }
+    }
+  }
+}
