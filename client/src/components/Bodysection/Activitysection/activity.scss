@@ -1,0 +1,30 @@
+:root {
+  --green: #6f6a37;
+  --red: #6f373c;
+  --main_color: hsl(25, 34%, 33%);
+  --white: #ffffff;
+  --font: "Yanone Kaffeesatz", sans-serif;
+  --font-second: "Aladin", cursive;
+  --primary-color: #a68966d6;
+  --secondary-color: #62422b;
+  --add-color: #a0450e;
+  --sidebar: #6c3428;
+  --sidebar-color-header: #acb5a7;
+  --main-color: #dfa878;
+  --add-color-1: #6c3428;
+
+  /* font size */
+  --biggest-font: 2.5rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smalest-font-size: 0.75rem;
+}
+.wrapper {
+  border-radius: 8px;
+  padding: 1.5rem;
+  background: var(--add-color-1);
+  color: var(--white);
+}

@@ -14,9 +14,9 @@ const Body = () => {
         <h1>dashboard</h1>
       </div>
       <div className="bottom flex">
-        <Weather />
-        <Activity />
-        <Analysis />
+        <Weather className="weather" />
+        <Activity className="activity" />
+        <Analysis className="analysis" />
       </div>
     </div>
   );
