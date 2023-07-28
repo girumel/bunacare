@@ -23,7 +23,6 @@
 }
 
 .weatherContainer {
-  border: 1px solid black;
   background-color: var(--green);
   border-radius: 8px;
 }
@@ -92,4 +91,4 @@
 .weatherContainer .weather .weatherInfo .details .col .humidity,
 .weatherContainer .weather .weatherInfo .details .col .wind {
   font-size: var(--h2-font-size);
-}/*# sourceMappingURL=Weather.css.map */
+}/*# sourceMappingURL=weather.css.map */
