@@ -1,7 +1,32 @@
+:root {
+  --green: #6f6a37;
+  --red: #6f373c;
+  --main_color: hsl(25, 34%, 33%);
+  --white: #ffffff;
+  --font: "Yanone Kaffeesatz", sans-serif;
+  --font-second: "Aladin", cursive;
+  --primary-color: #a68966d6;
+  --secondary-color: #62422b;
+  --add-color: #a0450e;
+  --sidebar: #6c3428;
+  --sidebar-color-header: #acb5a7;
+  --main-color: #dfa878;
+  --add-color-1: #6c3428;
+  /* font size */
+  --biggest-font: 2.5rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: 0.938rem;
+  --small-font-size: 0.813rem;
+  --smalest-font-size: 0.75rem;
+}
+
 .mainContent {
   width: 82%;
+  color: var(--white);
   height: 100%;
-  padding: 2rem;
+  padding: 1rem;
   overflow: auto;
 }
 .mainContent .title {
@@ -11,7 +36,26 @@
   justify-content: center;
 }
 .mainContent .bottom {
+  position: relative;
   margin-top: 2rem;
-  gap: 2rem;
+  gap: 1rem;
   align-items: flex-start;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 0.5fr 1.5fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 1px 2px;
+  gap: 0.4rem 0.5rem;
+  height: 100%;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  grid-template-areas: "weather actvity" "analysis analysis";
+}
+.mainContent .bottom .actvity {
+  grid-area: actvity;
+}
+.mainContent .bottom .analysis {
+  grid-area: analysis;
+  width: 100%;
 }/*# sourceMappingURL=body.css.map */

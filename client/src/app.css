@@ -63,7 +63,7 @@ img {
   outline: none;
   cursor: pointer;
   border-radius: 8px;
-  padding: .8rem 1rem;
+  padding: 0.8rem 1rem;
   color: var(--add-color);
   box-shadow: 0px 2px 4px var(--green);
 }
@@ -89,6 +89,11 @@ body {
   align-items: center;
   justify-content: center;
   background: var(--main-color);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url("./Assets/coffee_two.jpg");
+  border-radius: 8px;
+  background-attachment: fixed;
   overflow: hidden;
   border-radius: 1rem;
   box-shadow: 2px 2px 8px var(--green);
@@ -96,6 +101,6 @@ body {
 
 /* hiding scroll  thumb */
 
-::-webkit-scrollbar{
+::-webkit-scrollbar {
   display: none;
 }
