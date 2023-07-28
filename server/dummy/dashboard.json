@@ -1,35 +1,63 @@
 {
   "weatherInfo": {
-    "date": "July 27, 2023",
+    "date": "2023-07-27",
     "time": "12:00 PM",
     "temperature": "28°C",
     "humidity": "70%",
     "location": "Coffee Farm A, Ethiopia"
   },
   "weatherForecastDaily": {
-    "date": "July 28, 2023",
+    "date": "2023-07-28",
     "forecast": "Sunny",
     "temperature": "30°C",
     "humidity": "65%"
   },
   "weatherForecastWeekly": {
-    "dates": [
-      "July 28 - August 3, 2023",
-      "July 29",
-      "July 30",
-      "July 31",
-      "August 1",
-      "August 2",
-      "August 3"
-    ],
-    "forecasts": [
-      "Sunny, Temperature: 30°C, Humidity: 65%",
-      "Partly Cloudy, Temperature: 28°C, Humidity: 70%",
-      "Rainy, Temperature: 25°C, Humidity: 75%",
-      "Cloudy, Temperature: 27°C, Humidity: 68%",
-      "Sunny, Temperature: 29°C, Humidity: 67%",
-      "Sunny, Temperature: 31°C, Humidity: 63%",
-      "Partly Cloudy, Temperature: 29°C, Humidity: 66%"
+    "startDate": "2023-07-28",
+    "endDate": "2023-08-03",
+    "forecast": [
+      {
+        "date": "2023-07-28",
+        "forecast": "Sunny",
+        "temperature": "30°C",
+        "humidity": "65%"
+      },
+      {
+        "date": "2023-07-29",
+        "forecast": "Partly Cloudy",
+        "temperature": "28°C",
+        "humidity": "70%"
+      },
+      {
+        "date": "2023-07-30",
+        "forecast": "Rainy",
+        "temperature": "25°C",
+        "humidity": "75%"
+      },
+      {
+        "date": "2023-07-31",
+        "forecast": "Cloudy",
+        "temperature": "27°C",
+        "humidity": "68%"
+      },
+      {
+        "date": "2023-08-01",
+        "forecast": "Sunny",
+        "temperature": "29°C",
+        "humidity": "67%"
+      },
+      {
+        "date": "2023-08-02",
+        "forecast": "Sunny",
+        "temperature": "31°C",
+        "humidity": "63%"
+      },
+      {
+        "date": "2023-08-03",
+        "forecast": "Partly Cloudy",
+        "temperature": "29°C",
+        "humidity": "66%"
+      }
     ]
   },
   "tasks": {
@@ -46,16 +74,23 @@
     ]
   },
   "cropSummary": {
-    "healthyPlants": "450 out of 500",
-    "infectedCLR": "30 out of 500",
-    "infectedBES": "15 out of 500"
+    "healthyPlants": {
+      "total": 500,
+      "count": 450
+    },
+    "infectedByCLR": {
+      "total": 500,
+      "count": 30
+    },
+    "infectedByBES": {
+      "total": 500,
+      "count": 15
+    }
   },
   "healthStatus": {
-    "diseaseSeverityLevels": {
-      "Level 1 (Mild)": "200 plants",
-      "Level 2 (Moderate)": "100 plants",
-      "Level 3 (Severe)": "50 plants",
-      "Level 4 (Critical)": "20 plants"
-    }
+    "level1": 200,
+    "level2": 100,
+    "level3": 50,
+    "level4": 20
   }
 }
