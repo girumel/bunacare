@@ -1,0 +1,50 @@
+{
+  "knowledgeBase": {
+    "diseaseManagement": [
+      {
+        "diseaseName": "Coffee Leaf Rust (CLR)",
+        "overview": "An in-depth explanation of the Coffee Leaf Rust disease, its symptoms, causes, and impact on coffee plants.",
+        "prevention": "Best practices to prevent CLR, such as regular monitoring, proper sanitation, and early detection.",
+        "treatment": "Recommended fungicides and cultural practices for managing CLR outbreaks effectively."
+      },
+      {
+        "diseaseName": "Brown Eye Spot (BES)",
+        "overview": "Comprehensive information on the Brown Eye Spot disease, including its characteristics and potential risks.",
+        "prevention": "Strategies to minimize BES occurrence, including shade management and proper spacing between coffee plants.",
+        "treatment": "Effective methods to treat BES-infected plants and prevent further spread."
+      },
+      {
+        "diseaseName": "Coffee Plant Nutrition",
+        "overview": "Understanding the nutritional needs of coffee plants and how to provide proper fertilization for optimal growth and health."
+      }
+    ],
+    "faqs": [
+      {
+        "question": "How can I identify Coffee Leaf Rust on my coffee plants?",
+        "answer": "A step-by-step guide with images to help farmers recognize the early signs of CLR and distinguish it from other diseases."
+      },
+      {
+        "question": "What are the symptoms of Brown Eye Spot, and how can I control it?",
+        "answer": "Detailed information on BES symptoms and the most effective control measures, including fungicide applications."
+      },
+      {
+        "question": "How frequently should I monitor my coffee farm for disease outbreaks?",
+        "answer": "Recommendations on the ideal frequency of farm inspections and what to look for during each monitoring session."
+      }
+    ],
+    "informativeTutorials": [
+      {
+        "tutorialTitle": "How to Capture and Upload Coffee Leaf Images for Disease Identification",
+        "tutorialDescription": "A user-friendly tutorial explaining how to capture clear images of coffee leaves and upload them to the BunaCare system."
+      },
+      {
+        "tutorialTitle": "Understanding Weather Data and Its Impact on Crop Health",
+        "tutorialDescription": "An informative tutorial on interpreting weather data, such as temperature and humidity, and its significance for coffee farming."
+      },
+      {
+        "tutorialTitle": "Interpreting Disease Severity Levels and Implementing Customized Treatments",
+        "tutorialDescription": "A comprehensive guide on understanding disease severity levels and tailoring treatments based on the severity of infection."
+      }
+    ]
+  }
+}

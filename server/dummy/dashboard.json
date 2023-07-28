@@ -1,0 +1,61 @@
+{
+  "weatherInfo": {
+    "date": "July 27, 2023",
+    "time": "12:00 PM",
+    "temperature": "28°C",
+    "humidity": "70%",
+    "location": "Coffee Farm A, Ethiopia"
+  },
+  "weatherForecastDaily": {
+    "date": "July 28, 2023",
+    "forecast": "Sunny",
+    "temperature": "30°C",
+    "humidity": "65%"
+  },
+  "weatherForecastWeekly": {
+    "dates": [
+      "July 28 - August 3, 2023",
+      "July 29",
+      "July 30",
+      "July 31",
+      "August 1",
+      "August 2",
+      "August 3"
+    ],
+    "forecasts": [
+      "Sunny, Temperature: 30°C, Humidity: 65%",
+      "Partly Cloudy, Temperature: 28°C, Humidity: 70%",
+      "Rainy, Temperature: 25°C, Humidity: 75%",
+      "Cloudy, Temperature: 27°C, Humidity: 68%",
+      "Sunny, Temperature: 29°C, Humidity: 67%",
+      "Sunny, Temperature: 31°C, Humidity: 63%",
+      "Partly Cloudy, Temperature: 29°C, Humidity: 66%"
+    ]
+  },
+  "tasks": {
+    "currentTasks": [
+      "Apply fungicide to control CLR on 200 plants.",
+      "Monitor soil moisture and adjust irrigation.",
+      "Conduct a visual inspection of the crop for signs of BES.",
+      "Record crop health observations in the system."
+    ],
+    "pendingTasks": [
+      "Schedule a disease management workshop for farmers.",
+      "Purchase additional fungicides and bactericides.",
+      "Conduct soil testing for nutrient analysis."
+    ]
+  },
+  "cropSummary": {
+    "healthyPlants": "450 out of 500",
+    "infectedCLR": "30 out of 500",
+    "infectedBES": "15 out of 500"
+  },
+  "healthStatus": {
+    "diseaseSeverityLevels": {
+      "Level 1 (Mild)": "200 plants",
+      "Level 2 (Moderate)": "100 plants",
+      "Level 3 (Severe)": "50 plants",
+      "Level 4 (Critical)": "20 plants"
+    }
+  }
+}
