@@ -28,10 +28,11 @@
 }
 .weatherContainer .weather {
   width: 260px;
+  height: 330px;
   text-align: center;
   color: var(--white);
   border-radius: 8px;
-  margin: 50px 0.5rem;
+  margin: 20px 0.3rem;
 }
 .weatherContainer .weather .search {
   display: flex;
@@ -41,13 +42,13 @@
 .weatherContainer .weather .search .inputField {
   border: none;
   outline: none;
-  padding: 10px 15px;
+  padding: 5px 10px;
   font-size: var(--h3-font-size);
   background-color: var(--secondary-color);
   color: var(--white);
   border-radius: 8px;
   flex: 1;
-  margin-right: 10px;
+  margin-right: 5px;
 }
 .weatherContainer .weather .search .btn {
   border: none;
@@ -61,28 +62,28 @@
   justify-content: center;
 }
 .weatherContainer .weather .search .btn img {
-  width: 12px;
+  width: 10px;
 }
 .weatherContainer .weather .weatherInfo img {
   width: 140px;
-  margin-top: 0.5rem;
+  margin-top: 0.2rem;
 }
 .weatherContainer .weather .weatherInfo h2 {
   font-size: var(--h2-font-size);
   font-weight: 500;
-  margin-top: 0.5rem;
+  margin-top: 0.2rem;
 }
 .weatherContainer .weather .weatherInfo .details {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0px 10px;
-  margin-top: 20px;
+  padding: 0px 5px;
+  margin-top: 10px;
 }
 .weatherContainer .weather .weatherInfo .details .col {
   width: -moz-fit-content;
   width: fit-content;
-  margin-right: 4px;
+  margin-right: 2px;
 }
 .weatherContainer .weather .weatherInfo .details .col img {
   width: 30px;
@@ -91,4 +92,4 @@
 .weatherContainer .weather .weatherInfo .details .col .humidity,
 .weatherContainer .weather .weatherInfo .details .col .wind {
   font-size: var(--h2-font-size);
-}/*# sourceMappingURL=Weather.css.map */
+}/*# sourceMappingURL=weather.css.map */

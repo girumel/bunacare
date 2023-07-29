@@ -3,6 +3,8 @@ import "./sidebar.css";
 // importting image
 import Image from "../../Assets/logo.png";
 
+import { Outlet, Link } from "react-router-dom";
+
 // importing material ul icons
 import Dashboard from "@mui/icons-material/DashboardCustomizeOutlined";
 import Diagnostics from "@mui/icons-material/SpaOutlined";
@@ -22,44 +24,45 @@ const Sidebar = () => {
 
       <div className="menuDiv">
         <h2>quick menu</h2>
-        <ul className="menuList grid">
-          <li className="listitems">
-            <a href="" className="menuLink flex active">
-              <Dashboard className="icon" />
-              <span className="smallText">dashboard</span>
-            </a>
-          </li>
-          <li className="listitems">
-            <a href="" className="menuLink flex">
-              <Diagnostics className="icon" />
-              <span className="smallText">diagnostics</span>
-            </a>
-          </li>
-          <li className="listitems">
-            <a href="" className="menuLink flex">
-              <Graph className="icon" />
-              <span className="smallText">Graph</span>
-            </a>
-          </li>
-          <li className="listitems">
-            <a href="" className="menuLink flex">
-              <CheckList className="icon" />
-              <span className="smallText">Checklist</span>
-            </a>
-          </li>
-          <li className="listitems">
-            <a href="" className="menuLink flex">
-              <Calendar className="icon" />
-              <span className="smallText">calender</span>
-            </a>
-          </li>
-          <li className="listitems">
-            <a href="" className="menuLink flex">
-              <Info className="icon" />
-              <span className="smallText">info</span>
-            </a>
-          </li>
-        </ul>
+
+          <ul className="menuList grid">
+            <li className="listitems">
+              <a href="" className="menuLink flex active">
+                <Dashboard className="icon" />
+                <span className="smallText">dashboard</span>
+              </a>
+            </li>
+            <li className="listitems">
+              <a href="" className="menuLink flex">
+                <Diagnostics className="icon" />
+                <span className="smallText">diagnostics</span>
+              </a>
+            </li>
+            <li className="listitems">
+              <a href="" className="menuLink flex">
+                <Graph className="icon" />
+                <span className="smallText">Graph</span>
+              </a>
+            </li>
+            <li className="listitems">
+              <a href="" className="menuLink flex">
+                <CheckList className="icon" />
+                <span className="smallText">Checklist</span>
+              </a>
+            </li>
+            <li className="listitems">
+              <a href="" className="menuLink flex">
+                <Calendar className="icon" />
+                <span className="smallText">calender</span>
+              </a>
+            </li>
+            <li className="listitems">
+              <a href="" className="menuLink flex">
+                <Info className="icon" />
+                <span className="smallText">info</span>
+              </a>
+            </li>
+          </ul>
       </div>
       <div className="sidebarCard">
         <Help className="icon" />

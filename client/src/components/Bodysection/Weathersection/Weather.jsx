@@ -16,7 +16,7 @@ import Mist from "../../../Assets/images/mist.png";
 const Weather = () => {
   const [data, setData] = useState({
     celcius: 10,
-    name: "London",
+    name: "Addis Ababa",
     humidity: 10,
     speed: 2,
     image: `${cloud}`,
