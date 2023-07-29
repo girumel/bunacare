@@ -1,1 +1,9 @@
 /*# sourceMappingURL=Graph.css.map */
+.graph {
+  color: white;
+  width: 82%;
+  background-color: aliceblue;
+  color: var(--white);
+  padding: 1rem;
+  overflow: auto;
+}

@@ -25,44 +25,44 @@ const Sidebar = () => {
       <div className="menuDiv">
         <h2>quick menu</h2>
 
-          <ul className="menuList grid">
-            <li className="listitems">
-              <a href="" className="menuLink flex active">
-                <Dashboard className="icon" />
-                <span className="smallText">dashboard</span>
-              </a>
-            </li>
-            <li className="listitems">
-              <a href="" className="menuLink flex">
-                <Diagnostics className="icon" />
-                <span className="smallText">diagnostics</span>
-              </a>
-            </li>
-            <li className="listitems">
-              <a href="" className="menuLink flex">
-                <Graph className="icon" />
-                <span className="smallText">Graph</span>
-              </a>
-            </li>
-            <li className="listitems">
-              <a href="" className="menuLink flex">
-                <CheckList className="icon" />
-                <span className="smallText">Checklist</span>
-              </a>
-            </li>
-            <li className="listitems">
-              <a href="" className="menuLink flex">
-                <Calendar className="icon" />
-                <span className="smallText">calender</span>
-              </a>
-            </li>
-            <li className="listitems">
-              <a href="" className="menuLink flex">
-                <Info className="icon" />
-                <span className="smallText">info</span>
-              </a>
-            </li>
-          </ul>
+        <ul className="menuList grid">
+          <li className="listitems">
+            <Link className="menuLink flex active" to="/">
+              <Dashboard className="icon" />
+              <span className="smallText">dashbaord</span>
+            </Link>
+          </li>
+          <li className="listitems">
+            <Link className="menuLink flex" to="/diagnostics">
+              <Diagnostics className="icon" />
+              <span className="smallText">diagnostics</span>
+            </Link>
+          </li>
+          <li className="listitems">
+            <Link className="menuLink flex" to="/graph">
+              <Graph className="icon" />
+              <span className="smallText">Graph</span>
+            </Link>
+          </li>
+          <li className="listitems">
+            <Link className="menuLink flex" to="/checklist">
+              <Graph className="icon" />
+              <span className="smallText">Checklist</span>
+            </Link>
+          </li>
+          <li className="listitems">
+            <Link className="menuLink flex" to="/calender">
+              <Calendar className="icon" />
+              <span className="smallText">calender</span>
+            </Link>
+          </li>
+          <li className="listitems">
+            <Link className="menuLink flex" to="/info">
+              <Info className="icon" />
+              <span className="smallText">info</span>
+            </Link>
+          </li>
+        </ul>
       </div>
       <div className="sidebarCard">
         <Help className="icon" />

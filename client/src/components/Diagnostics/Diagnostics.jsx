@@ -1,9 +1,8 @@
-import React from 'react'
+import React from "react";
+import "./Diagnostics.css";
 
 const Diagnostics = () => {
-  return (
-    <div>Diagnostics</div>
-  )
-}
+  return <div className="diag">Diagnostics</div>;
+};
 
-export default Diagnostics
+export default Diagnostics;
