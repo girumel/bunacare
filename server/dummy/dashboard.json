@@ -1,0 +1,96 @@
+{
+  "weatherInfo": {
+    "date": "2023-07-27",
+    "time": "12:00 PM",
+    "temperature": "28°C",
+    "humidity": "70%",
+    "location": "Coffee Farm A, Ethiopia"
+  },
+  "weatherForecastDaily": {
+    "date": "2023-07-28",
+    "forecast": "Sunny",
+    "temperature": "30°C",
+    "humidity": "65%"
+  },
+  "weatherForecastWeekly": {
+    "startDate": "2023-07-28",
+    "endDate": "2023-08-03",
+    "forecast": [
+      {
+        "date": "2023-07-28",
+        "forecast": "Sunny",
+        "temperature": "30°C",
+        "humidity": "65%"
+      },
+      {
+        "date": "2023-07-29",
+        "forecast": "Partly Cloudy",
+        "temperature": "28°C",
+        "humidity": "70%"
+      },
+      {
+        "date": "2023-07-30",
+        "forecast": "Rainy",
+        "temperature": "25°C",
+        "humidity": "75%"
+      },
+      {
+        "date": "2023-07-31",
+        "forecast": "Cloudy",
+        "temperature": "27°C",
+        "humidity": "68%"
+      },
+      {
+        "date": "2023-08-01",
+        "forecast": "Sunny",
+        "temperature": "29°C",
+        "humidity": "67%"
+      },
+      {
+        "date": "2023-08-02",
+        "forecast": "Sunny",
+        "temperature": "31°C",
+        "humidity": "63%"
+      },
+      {
+        "date": "2023-08-03",
+        "forecast": "Partly Cloudy",
+        "temperature": "29°C",
+        "humidity": "66%"
+      }
+    ]
+  },
+  "tasks": {
+    "currentTasks": [
+      "Apply fungicide to control CLR on 200 plants.",
+      "Monitor soil moisture and adjust irrigation.",
+      "Conduct a visual inspection of the crop for signs of BES.",
+      "Record crop health observations in the system."
+    ],
+    "pendingTasks": [
+      "Schedule a disease management workshop for farmers.",
+      "Purchase additional fungicides and bactericides.",
+      "Conduct soil testing for nutrient analysis."
+    ]
+  },
+  "cropSummary": {
+    "healthyPlants": {
+      "total": 500,
+      "count": 450
+    },
+    "infectedByCLR": {
+      "total": 500,
+      "count": 30
+    },
+    "infectedByBES": {
+      "total": 500,
+      "count": 15
+    }
+  },
+  "healthStatus": {
+    "level1": 200,
+    "level2": 100,
+    "level3": 50,
+    "level4": 20
+  }
+}

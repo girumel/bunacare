@@ -1,0 +1,20 @@
+{
+  "dailyCropHealth": {
+    "date": "2023-07-27",
+    "healthyPlants": 440,
+    "infectedCLR": 30,
+    "infectedBES": 10
+  },
+  "weeklyCropHealth": {
+    "weekStarting": "2023-07-24",
+    "healthyPlants": [420, 430, 440, 435, 440],
+    "infectedCLR": [20, 25, 30, 28, 30],
+    "infectedBES": [5, 8, 10, 12, 10]
+  },
+  "monthlyCropHealth": {
+    "month": "2023-07",
+    "healthyPlants": [400, 410, 420, 430, 440, 445, 450],
+    "infectedCLR": [15, 20, 25, 30, 32, 30, 30],
+    "infectedBES": [3, 5, 8, 10, 12, 10, 8]
+  }
+}
