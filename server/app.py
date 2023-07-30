@@ -6,10 +6,20 @@ import dateutil.parser
 import requests
 import joblib
 from flask import Flask, request
+from flask_sqlalchemy import SQLAlchemy
+from flask_migrate import Migrate
+
 from skimage.io import imread
 from skimage.transform import resize
 
 app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
+app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
+
+db = SQLAlchemy(app)
+migrate = Migrate(app, db)
+from models.Task import Task
+
 api_key = os.getenv('OPENWEATHERMAP_API_KEY')
 base_url = 'https://api.openweathermap.org/data/2.5/'
 
@@ -49,7 +59,47 @@ def get_forecast_weekly(lat, lon):
             'humidity': forecast['main']['humidity']
         })
     return weekly_forecast
-    
+
+@app.route('/tasks/<task_id>', methods=['GET'])
+def get_task(task_id):
+    task = Task.query.filter(Task.id == task_id).one_or_none()
+    if task is None:
+        return 'Task not found', 404
+    return task.format()
+
+@app.route('/tasks', methods=['GET'])
+def get_tasks():
+    tasks = [task.format() for task in Task.query.all()]
+    todo_column = [task for task in tasks if task['status'] == 'todo']
+    doing_column = [task for task in tasks if task['status'] == 'doing']
+    done_columnn = [task for task in tasks if task['status'] == 'done']
+    return {
+        'toDoColumn': todo_column,
+        'doingColumn': doing_column,
+        'doneColumn': done_columnn
+    }
+
+@app.route('/tasks/current', methods=['GET'])
+def get_current_tasks():
+    current_tasks= [task.name for task in Task.query.filter(Task.status == 'doing').all()]
+    return {
+        'currentTasks': current_tasks
+    }
+   
+
+@app.route('/tasks/pending', methods=['GET'])
+def get_pending_tasks():
+    pending_tasks = [task.name for task in Task.query.filter(Task.status == 'todo').all()]
+    return {
+        'pendingTasks': pending_tasks
+    }
+
+@app.route('/tasks/completed', methods=['GET'])
+def get_completed_tasks():
+    completed_tasks = [task.name for task in Task.query.filter(Task.status == 'done').all()]
+    return {
+        'completedTasks': completed_tasks
+    }
 
 @app.route('/diagnosis/image-capture', methods=['GET'])
 def capture_image():
