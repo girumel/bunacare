@@ -3,23 +3,13 @@ import os
 
 import cv2
 import dateutil.parser
-import joblib
 import requests
+import joblib
 from flask import Flask, request
-from flask_sqlalchemy import SQLAlchemy
-from flask_migrate import Migrate
-
 from skimage.io import imread
 from skimage.transform import resize
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = os.getenv('DATABASE_URL')
-app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
-
-db = SQLAlchemy(app)
-migrate = Migrate(app, db)
-from models.Task import Task
-
 api_key = os.getenv('OPENWEATHERMAP_API_KEY')
 base_url = 'https://api.openweathermap.org/data/2.5/'
 
@@ -59,47 +49,7 @@ def get_forecast_weekly(lat, lon):
             'humidity': forecast['main']['humidity']
         })
     return weekly_forecast
-
-@app.route('/tasks/all', methods=['GET'])
-def get_all_tasks():
-    all_tasks = Task.query.all()
-    all_tasks_formatted = [task.format() for task in all_tasks]
-    todo_column = [task for task in all_tasks_formatted if task['status'] == 'todo']
-    doing_column = [task for task in all_tasks_formatted if task['status'] == 'doing']
-    done_columnn = [task for task in all_tasks_formatted if task['status'] == 'done']
-    return {
-        'toDoColumn': todo_column,
-        'doingColumn': doing_column,
-        'doneColumn': done_columnn
-    }
-
-@app.route('/tasks/current', methods=['GET'])
-def get_current_tasks():
-    current_tasks = Task.query.filter(Task.status == 'doing').all()
-    current_tasks_formatted = [task.format() for task in current_tasks]
-    return current_tasks_formatted
-
-@app.route('/tasks', methods=['POST'])
-def create_task():
-    body = request.get_json()
-    task = Task(
-        status=body['status'],
-        name=body['name'],
-        description=body['description'],
-        date=body['date']
-    )
-    task.insert()
-    return task.format()
-
-@app.route('/tasks/<task_id>', methods=['PATCH'])
-def update_task(task_id):
-    body = request.get_json()
-    task = Task.query.filter(Task.id == task_id).one_or_none()
-    if task is None:
-        return 'Task not found', 404
-    task.status = body['status']
-    task.update()
-    return task.format()
+    
 
 @app.route('/diagnosis/image-capture', methods=['GET'])
 def capture_image():

@@ -1,6 +1,0 @@
-- capture
-- upload
-- process
-- analyze
-- recommend (pesticide, duration)
-- store
