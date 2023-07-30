@@ -142,6 +142,24 @@ def capture_image():
     cap.release() 
     return predict_disease(filename)
 
+@app.route('/farm/summary', methods=['GET'])
+def get_farm_summary():
+    crops = Crop.query.all()
+    total = len(crops)
+    healthy = len([crop for crop in crops if crop.infected == False])
+    infected = len([crop for crop in crops if crop.infected == True])
+    infected_by_clr = len([crop for crop in crops if crop.infected == True and crop.infected_by == 1])
+    infected_by_bes = len([crop for crop in crops if crop.infected == True and crop.infected_by == 2])
+    return {
+        'FarmSummary': {
+            'total': total,
+            'healthy': healthy,
+            'infected': infected,
+            'infectedByCLR': infected_by_clr,
+            'infectedByBES': infected_by_bes
+        }
+    }
+
 @app.route('/diagnosis/image-upload', methods=['POST'])
 def upload_image():
     file = request.files['file']
