@@ -61,19 +61,12 @@
       "Conduct soil testing for nutrient analysis."
     ]
   },
-  "cropSummary": {
-    "healthyPlants": {
-      "total": 500,
-      "count": 450
-    },
-    "infectedByCLR": {
-      "total": 500,
-      "count": 30
-    },
-    "infectedByBES": {
-      "total": 500,
-      "count": 15
-    }
+  "FarmSummary": {
+    "total": 500,
+    "healthy": 350,
+    "infected": 150,
+    "infectedByCLR": 100,
+    "infectedByBES": 50
   },
   "healthStatus": {
     "level1": 200,
