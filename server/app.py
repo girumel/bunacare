@@ -19,6 +19,7 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 from models.Task import Task
+from models.Crop import Crop
 
 api_key = os.getenv('OPENWEATHERMAP_API_KEY')
 base_url = 'https://api.openweathermap.org/data/2.5/'
@@ -112,6 +113,7 @@ def create_task():
     )
     task.insert()
     return task.format()
+
 @app.route('/tasks/<task_id>', methods=['PATCH'])
 def update_task(task_id):
     body = request.get_json()
@@ -121,6 +123,7 @@ def update_task(task_id):
     task.status = body['status']
     task.update()
     return task.format()
+
 @app.route('/tasks/<task_id>', methods=['DELETE'])
 def delete_task(task_id):
     task = Task.query.filter(Task.id == task_id).one_or_none()
