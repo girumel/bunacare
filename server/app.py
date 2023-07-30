@@ -33,6 +33,22 @@ def get_forecast_daily(lat, lon):
             'humidity': forecast['main']['humidity']
         })
     return daily_forecast[0]
+
+@app.route('/weather/forecast/weekly/<lat>/<lon>', methods=['GET'])
+def get_forecast_weekly(lat, lon):
+    url = f'{base_url}/forecast?lat={lat}&lon={lon}&appid={api_key}'
+    response = requests.get(url)
+    weekly_forecast = []
+    for forecast in response.json()['list']:
+        if forecast['dt_txt'].split(' ')[1] != '12:00:00':
+            continue
+        weekly_forecast.append({
+            'date': forecast['dt_txt'].split(' ')[0],
+            'forecast': forecast['weather'][0]['main'],
+            'temperature': forecast['main']['temp'],
+            'humidity': forecast['main']['humidity']
+        })
+    return weekly_forecast
     
 
 @app.route('/diagnosis/image-capture', methods=['GET'])
