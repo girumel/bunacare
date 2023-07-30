@@ -1,0 +1,20 @@
+{
+    "disease": "Coffee Leaf Rust (CLR)",
+    "severity": "Moderate",
+    "confidence": 0.85,
+    "recommendations": "Apply appropriate fungicides and monitor plant health regularly."
+  }
+  
+  prediction = model.predict(img)
+    disease = prediction[0]
+    severity = prediction[1]
+    recommendation = get_recommendation(disease, severity)
+    return {
+        'disease': disease,
+        'severity': severity,
+        'recommendation': recommendation
+    }
+
+def get_recommendation(disease):
+    
+    return 'Use pesticide X'
