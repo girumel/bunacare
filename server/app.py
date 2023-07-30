@@ -160,6 +160,38 @@ def get_farm_summary():
         }
     }
 
+@app.route('/farm/infections', methods=['GET'])
+def get_farm_infections():
+    clr_infections = Crop.query.filter(Crop.infected == True, Crop.infected_by == 1).all()
+    clr_total = len(clr_infections)
+    clr_mild = len([crop for crop in clr_infections if crop.severity_level == 1])
+    clr_moderate = len([crop for crop in clr_infections if crop.severity_level == 2])
+    clr_severe = len([crop for crop in clr_infections if crop.severity_level == 3])
+    bes_infections = Crop.query.filter(Crop.infected == True, Crop.infected_by == 2).all()
+    bes_total = len(bes_infections)
+    bes_mild = len([crop for crop in bes_infections if crop.severity_level == 1])
+    bes_moderate = len([crop for crop in bes_infections if crop.severity_level == 2])
+    bes_severe = len([crop for crop in bes_infections if crop.severity_level == 3])
+    return {
+        'FarmInfections': [
+            {
+                'infection': 'CLR',
+                'total': clr_total,
+                'mild': clr_mild,
+                'moderate': clr_moderate,
+                'severe': clr_severe
+            },
+            {
+                'infection': 'BES',
+                'total': bes_total,
+                'mild': bes_mild,
+                'moderate': bes_moderate,
+                'severe': bes_severe
+            }
+        ]
+    }
+
+
 @app.route('/diagnosis/image-upload', methods=['POST'])
 def upload_image():
     file = request.files['file']
