@@ -101,6 +101,34 @@ def get_completed_tasks():
         'completedTasks': completed_tasks
     }
 
+@app.route('/tasks', methods=['POST'])
+def create_task():
+    body = request.get_json()
+    task = Task(
+        status=body['status'],
+        name=body['name'],
+        description=body['description'],
+        date=body['date']
+    )
+    task.insert()
+    return task.format()
+@app.route('/tasks/<task_id>', methods=['PATCH'])
+def update_task(task_id):
+    body = request.get_json()
+    task = Task.query.filter(Task.id == task_id).one_or_none()
+    if task is None:
+        return 'Task not found', 404
+    task.status = body['status']
+    task.update()
+    return task.format()
+@app.route('/tasks/<task_id>', methods=['DELETE'])
+def delete_task(task_id):
+    task = Task.query.filter(Task.id == task_id).one_or_none()
+    if task is None:
+        return 'Task not found', 404
+    task.delete()
+    return task.format()
+
 @app.route('/diagnosis/image-capture', methods=['GET'])
 def capture_image():
     cap = cv2.VideoCapture(0)
