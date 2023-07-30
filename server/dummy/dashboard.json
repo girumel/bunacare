@@ -17,18 +17,6 @@
     "endDate": "2023-08-03",
     "forecast": [
       {
-        "date": "2023-07-28",
-        "forecast": "Sunny",
-        "temperature": "30°C",
-        "humidity": "65%"
-      },
-      {
-        "date": "2023-07-29",
-        "forecast": "Partly Cloudy",
-        "temperature": "28°C",
-        "humidity": "70%"
-      },
-      {
         "date": "2023-07-30",
         "forecast": "Rainy",
         "temperature": "25°C",
