@@ -1,46 +1,50 @@
 {
   "toDoColumn": [
     {
-      "task": "Apply fungicide to control CLR.",
+      "name": "Apply fungicide to control CLR.",
       "description": "Spray appropriate fungicide on coffee plants to combat Coffee Leaf Rust.",
-      "assignedDate": "2023-07-26"
+      "date": "2023-07-26",
+      "status": "todo"
     },
     {
-      "task": "Monitor soil moisture and adjust irrigation.",
+      "name": "Monitor soil moisture and adjust irrigation.",
       "description": "Check soil moisture levels regularly and adjust irrigation as needed to ensure optimal plant health.",
-      "assignedDate": "2023-07-25"
+      "date": "2023-07-25",
+      "status": "todo"
     },
     {
-      "task": "Conduct a visual inspection of the crop for signs of BES.",
+      "name": "Conduct a visual inspection of the crop for signs of BES.",
       "description": "Observe coffee plants for symptoms of Brown Eye Spot disease.",
-      "assignedDate": "2023-07-24"
+      "date": "2023-07-24",
+      "status": "todo"
     }
   ],
   "doingColumn": [
     {
-      "task": "Record crop health observations in the system.",
+      "name": "Record crop health observations in the system.",
       "description": "Log daily observations of coffee plant health and disease status in the BunaCare system.",
-      "assignedDate": "2023-07-22"
+      "date": "2023-07-22",
+      "status": "doing"
     }
   ],
   "doneColumn": [
     {
-      "task": "Schedule a disease management workshop for farmers.",
+      "name": "Schedule a disease management workshop for farmers.",
       "description": "Plan and organize a workshop to educate farmers about effective disease management practices.",
-      "assignedDate": "2023-07-20",
-      "completedDate": "2023-07-26"
+      "date": "2023-07-20",
+      "status": "done"
     },
     {
-      "task": "Purchase additional fungicides and bactericides.",
+      "name": "Purchase additional fungicides and bactericides.",
       "description": "Procure fungicides and bactericides to be used in disease control measures.",
-      "assignedDate": "2023-07-18",
-      "completedDate": "2023-07-23"
+      "date": "2023-07-18",
+      "status": "done"
     },
     {
-      "task": "Conduct soil testing for nutrient analysis.",
+      "name": "Conduct soil testing for nutrient analysis.",
       "description": "Collect soil samples for laboratory analysis to assess nutrient levels and soil health.",
-      "assignedDate": "2023-07-15",
-      "completedDate": "2023-07-20"
+      "date": "2023-07-15",
+      "status": "done"
     }
   ]
 }

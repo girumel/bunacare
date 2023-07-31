@@ -17,18 +17,6 @@
     "endDate": "2023-08-03",
     "forecast": [
       {
-        "date": "2023-07-28",
-        "forecast": "Sunny",
-        "temperature": "30°C",
-        "humidity": "65%"
-      },
-      {
-        "date": "2023-07-29",
-        "forecast": "Partly Cloudy",
-        "temperature": "28°C",
-        "humidity": "70%"
-      },
-      {
         "date": "2023-07-30",
         "forecast": "Rainy",
         "temperature": "25°C",
@@ -73,24 +61,27 @@
       "Conduct soil testing for nutrient analysis."
     ]
   },
-  "cropSummary": {
-    "healthyPlants": {
-      "total": 500,
-      "count": 450
-    },
-    "infectedByCLR": {
-      "total": 500,
-      "count": 30
-    },
-    "infectedByBES": {
-      "total": 500,
-      "count": 15
-    }
+  "FarmSummary": {
+    "total": 500,
+    "healthy": 350,
+    "infected": 150,
+    "infectedByCLR": 100,
+    "infectedByBES": 50
   },
-  "healthStatus": {
-    "level1": 200,
-    "level2": 100,
-    "level3": 50,
-    "level4": 20
-  }
+  "FarmInfections": [
+    {
+      "infection": "CLR",
+      "total": 100,
+      "mild": 50,
+      "moderate": 30,
+      "severe": 20
+    },
+    {
+      "infection": "BES",
+      "total": 50,
+      "mild": 20,
+      "moderate": 15,
+      "severe": 15
+    }
+  ]
 }
