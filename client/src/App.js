@@ -5,7 +5,7 @@ import Diagnostics from "./components/Diagnostics/Diagnostics";
 import Checklist from "./components/Checklist/Checklist";
 import Graph from "./components/Graph/Graph";
 import Info from "./components/Info/Info";
-import Calender from "./components/Calender/Calender";
+import Calender from "./components/Calender/Calender_main";
 
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
