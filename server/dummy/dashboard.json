@@ -4,7 +4,7 @@
     "time": "12:00 PM",
     "temperature": "28°C",
     "humidity": "70%",
-    "location": "Coffee Farm A, Ethiopia"
+    "location": "Addis Ababa"
   },
   "weatherForecastDaily": {
     "date": "2023-07-28",
@@ -12,10 +12,7 @@
     "temperature": "30°C",
     "humidity": "65%"
   },
-  "weatherForecastWeekly": {
-    "startDate": "2023-07-28",
-    "endDate": "2023-08-03",
-    "forecast": [
+  "weatherForecastWeekly": [
       {
         "date": "2023-07-30",
         "forecast": "Rainy",
@@ -46,8 +43,7 @@
         "temperature": "29°C",
         "humidity": "66%"
       }
-    ]
-  },
+    ],
   "tasks": {
     "currentTasks": [
       "Apply fungicide to control CLR on 200 plants.",
