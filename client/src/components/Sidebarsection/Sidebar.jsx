@@ -72,7 +72,14 @@ const Sidebar = () => {
           <p>
             having trouble in buna care, please contact us for more information.
           </p>
-          <button className="btn">go to help center</button>
+          <button className="btn">
+            <a
+              href="https://www.ethiopiatrade.org/ethiopia-coffee-farms/"
+              target="__blank__"
+            >
+              go to help center
+            </a>
+          </button>
         </div>
       </div>
     </div>

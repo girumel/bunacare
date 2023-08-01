@@ -33,28 +33,22 @@ const Analysis = () => {
 
   const data_bar = [
     {
-      name: "Level 1",
-      uv: 4000,
-      pv: 2400,
-      amt: 2400,
+      name: "Mild",
+      CLR: 400,
+      BES: 200,
+      amt: 100,
     },
     {
-      name: "Level 2",
-      uv: 3000,
-      pv: 1398,
-      amt: 2210,
+      name: "Moderate",
+      CLR: 300,
+      BES: 198,
+      amt: 100,
     },
     {
-      name: "Level 3",
-      uv: 2000,
-      pv: 9800,
-      amt: 2290,
-    },
-    {
-      name: "Level 4",
-      uv: 2780,
-      pv: 3908,
-      amt: 2000,
+      name: "Severe",
+      CLR: 200,
+      BES: 900,
+      amt: 100,
     },
   ];
 
@@ -63,7 +57,6 @@ const Analysis = () => {
       <div className="total">
         <h2>total summary</h2>
         <BarChart
-          className="BarChart"
           width={500}
           height={300}
           data={data_bar}
@@ -73,19 +66,14 @@ const Analysis = () => {
             left: 20,
             bottom: 5,
           }}
-          barSize={20}
         >
-          <XAxis
-            dataKey="name"
-            scale="point"
-            padding={{ left: 10, right: 10 }}
-            style={{ color: "white" }}
-          />
+          <CartesianGrid strokeDasharray="3 3" />
+          <XAxis dataKey="name" />
           <YAxis />
           <Tooltip />
           <Legend />
-          <CartesianGrid strokeDasharray="3 3" />
-          <Bar dataKey="pv" fill="#6f373c" background={{ fill: "#dfa878" }} />
+          <Bar dataKey="BES" fill="#dfa878" />
+          <Bar dataKey="CLR" fill="#6c3428" />
         </BarChart>
       </div>
       <div className="crop">

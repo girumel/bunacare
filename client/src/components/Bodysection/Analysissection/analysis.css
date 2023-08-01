@@ -27,7 +27,7 @@
   grid-auto-columns: 1fr;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 1px 2px;
+  gap: .5em;
   grid-template-areas: "crop total" "crop total";
 }
 .analysis .crop {
@@ -53,4 +53,4 @@
   color: var(--main-color);
   padding: 1rem;
   text-align: center;
-}/*# sourceMappingURL=analysis.css.map */
+} /*# sourceMappingURL=analysis.css.map */

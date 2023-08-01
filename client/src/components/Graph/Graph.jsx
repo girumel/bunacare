@@ -136,9 +136,12 @@ export default class Example extends PureComponent {
 
     return (
       <div
-        className="highlight-bar-charts graph"
+        className="highlight-bar-charts"
         style={{ userSelect: "none", width: "100%" }}
       >
+        <div className="graph_title">
+          <h2>graph</h2>
+        </div>
         <button
           type="button"
           className="btn update"
@@ -185,14 +188,14 @@ export default class Example extends PureComponent {
               yAxisId="1"
               type="natural"
               dataKey="cost"
-              stroke="#8884d8"
+              stroke="#6f373c"
               animationDuration={300}
             />
             <Line
               yAxisId="2"
               type="natural"
               dataKey="impression"
-              stroke="#82ca9d"
+              stroke="#a0450e"
               animationDuration={300}
             />
 

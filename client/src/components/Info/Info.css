@@ -7,23 +7,16 @@
   padding: 1rem;
   overflow: auto;
 } /*# sourceMappingURL=Info.css.map */
-div {
-  padding: 8px;
+.info-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
 }
-
-h1 {
-  text-align: center;
-  text-transform: uppercase;
-  color: #ffffff;
-}
-
-p {
-  text-indent: 50px;
-  text-align: justify;
-  letter-spacing: 3px;
-}
-
-a {
-  text-decoration: none;
-  color: #008cba;
+.info-content,.rust,.cofbro {
+  display: flex;
+  align-items: cener;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 0.2em;
 }

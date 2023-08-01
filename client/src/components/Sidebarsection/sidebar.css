@@ -138,4 +138,11 @@
   width: 100px;
   top: -50px;
   left: -50px;
-}/*# sourceMappingURL=sidebar.css.map */
+} /*# sourceMappingURL=sidebar.css.map */
+a {
+  text-decoration: none;
+  color: var(--add-color-1);
+}
+a:hover {
+  color: var(--white);
+}

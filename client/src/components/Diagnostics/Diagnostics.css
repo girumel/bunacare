@@ -1,45 +1,10 @@
 .diag {
   color: white;
   height: 100%;
+  border: 1px solid rgb(222, 222, 222);
   width: 82%;
   color: var(--white);
   height: 100%;
   padding: 1rem;
   overflow: auto;
-} /*# sourceMappingURL=Diagnostics.css.map */
-.diag {
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-}
-.main,
-.scan-section,
-.upload-section {
-  display: flex;
-  margin: 1em;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.main {
-  height: 50%;
-  width: 50%;
-}
-.scan-section,
-.upload-section {
-  height: 50%;
-  width: 50%;
-  cursor: pointer;
-}
-
-.upload-section:hover {
-  transform: scale(1.2, 1.2);
-  transition: all ease 0.5s;
-}
-.scan-section:hover {
-  transform: scale(1.2, 1.2);
-  transition: all ease 0.5s;
-}
+}/*# sourceMappingURL=Diagnostics.css.map */

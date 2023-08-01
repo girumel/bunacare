@@ -42,7 +42,7 @@
     margin-top: 1rem;
     margin-bottom: 1rem;
     border-radius: 8px;
-    width: 200px;
+    width: 50%;
     height: 30px;
     color: var(--white);
   }
@@ -57,7 +57,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0.5rem 1rem;
+    padding: 1rem 1rem;
     color: var(--add-color);
     box-shadow: 0px 2px 4px var(--green);
     &:hover {
