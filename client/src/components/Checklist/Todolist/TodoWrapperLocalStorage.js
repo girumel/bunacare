@@ -3,6 +3,7 @@ import { TodoForm } from "./TodoForm";
 import { v4 as uuidv4 } from "uuid";
 import { Todo } from "./Todo";
 import { EditTodoForm } from "./EditTodoForm";
+import { Console } from "console";
 uuidv4();
 
 export const TodoWrapperLocalStorage = () => {
@@ -12,7 +13,6 @@ export const TodoWrapperLocalStorage = () => {
     const savedTodos = JSON.parse(localStorage.getItem("todos")) || [];
     setTodos(savedTodos);
   }, []);
-
   const addTodo = (todo) => {
     const newTodos = [
       ...todos,
@@ -29,7 +29,6 @@ export const TodoWrapperLocalStorage = () => {
     setTodos(newTodos);
     localStorage.setItem("todos", JSON.stringify(newTodos));
   };
-
   const deleteTodo = (id) => {
     const newTodos = todos.filter((todo) => todo.id !== id);
     setTodos(newTodos);

@@ -66,10 +66,51 @@
   grid-area: days_left_pending;
 }
 
-.due_current {
-  border: 1px solid rgb(12, 140, 0);
+.due_current,
+.due_pending,
+.days_left_due,
+.days_left_pending {
+  position: relative;
+  padding: 0.2em;
+  display: grid;
+  grid-auto-columns: 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  gap: 5px 5px;
+  grid-template-areas: ". . .";
+  height: fit-content;
+  width: fit-content;
 }
-.pending {
+.pending,
+.due-pending,
+.days-pending,
+.days-left {
   padding: 0.5em;
+  background: var(--sidebar);
+  border-radius: 8px;
+  height: fit-content;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+  width: fit-content;
   font-size: var(--h2-font-size);
+}
+.date {
+  height: fit-content;
+  width: fit-content;
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  border-radius: 8px;
+  padding: 0.8rem 1rem;
+  color: var(--add-color);
+  box-shadow: 0px 2px 4px var(--green);
+}
+.date:hover {
+  background: var(--main-color);
+  color: var(--white);
 }
