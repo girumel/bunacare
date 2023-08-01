@@ -19,7 +19,7 @@ const Sidebar = () => {
     <div className="sidebar grid">
       <div className="logoDiv flex">
         <img src={Image} alt="logo_image" srcset="" />
-        <h2 className="divTitle">buna care</h2>
+        <h2 className="divTitle">bunaCare</h2>
       </div>
 
       <div className="menuDiv">
@@ -41,13 +41,13 @@ const Sidebar = () => {
           <li className="listitems">
             <Link className="menuLink flex" to="/graph">
               <Graph className="icon" />
-              <span className="smallText">Graph</span>
+              <span className="smallText">statistics</span>
             </Link>
           </li>
           <li className="listitems">
             <Link className="menuLink flex" to="/checklist">
               <Graph className="icon" />
-              <span className="smallText">Checklist</span>
+              <span className="smallText">activities</span>
             </Link>
           </li>
           <li className="listitems">

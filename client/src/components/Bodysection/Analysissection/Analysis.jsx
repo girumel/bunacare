@@ -55,7 +55,7 @@ const Analysis = () => {
   return (
     <div className="analysis">
       <div className="total">
-        <h2>total summary</h2>
+        <h2>Infections Report</h2>
         <BarChart
           width={500}
           height={300}
@@ -77,7 +77,7 @@ const Analysis = () => {
         </BarChart>
       </div>
       <div className="crop">
-        <h2>crop</h2>
+        <h2>Farm Summary</h2>
         <PieChart width={300} height={300} className="PieChart">
           <Pie
             dataKey="value"
